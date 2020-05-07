@@ -10,7 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        Text("Hello, World!").onAppear{
+            print(MoviesRequest.request())
+            //MovieHtmlMapper.transformMovie(MovieHtmlMapper.HTML_EXAMPLE)
+            print("done")
+        }
     }
 }
 
